@@ -6,20 +6,14 @@
     <body>
         <script>
  
- let who = prompt("이름을 입력해주세요", "");
-if (who == "Admin") {
-    let password = prompt("비밀번호를 입력해주세요")
-    if(password == "TheMaster") {
-        alert("환영합니다")
-    }else if(password == null || password== ""){
-        alert("취소되었습니다")
-    } else {
-        alert("인증에 실패 하였습니다")
-    }
-} else if (who == "" || who == null){
-    alert("취소되었습니다")
-} else {
-    alert("누구세요")
+//  for (let i = 0; i < 3; i++) {
+//   alert(`number ${i}!`);
+// }
+
+let num=0;
+while (num <= 100) {
+  num = prompt("100을 초과하는 숫자를 입력해주세요", 0);
+  if (!num) break;
 }
         </script>
     </body>
